@@ -40,8 +40,8 @@ class Layer:
 
         d loss / d x  = (d loss / d layer) * (d layer / d x)
 
-        Luckily, you already receive d loss / d layer as input,
-        so you only need to multiply it by d layer / d x.
+        d loss / d layer comes as input,
+        so only need to multiply it by d layer / d x.
 
         If your layer has parameters (e.g. dense layer),
         you also need to update them here using d loss / d layer
@@ -95,9 +95,7 @@ class Dense(Layer):
         self.output_units = output_units
 
         # initialize weights with small random numbers.
-        # We use normal initialization,
-        # but surely there is something better.
-        # Try this once you got it working: http://bit.ly/2vTlmaJ
+        # We use normal initialization
         self.weights = np.random.randn(input_units, output_units)*0.01
         self.biases = np.zeros(output_units)
 
