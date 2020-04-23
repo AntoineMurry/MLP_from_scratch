@@ -12,6 +12,7 @@ coverage
 flake8
 matplotlib
 numpy
+keras
 """
 
 setup(name='MLP_from_scratch',
