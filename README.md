@@ -6,6 +6,7 @@ This code is inspired by the Coursera Mooc 'Introduction to Deep Learning',
  by the National Research University Higher School of Economics
 (https://www.coursera.org/learn/intro-to-deep-learning/)
 
+```
 .
 ├── Makefile
 ├── MLP_from_scratch
@@ -21,3 +22,4 @@ This code is inspired by the Coursera Mooc 'Introduction to Deep Learning',
 └── tests
     ├── __init__.py
     └── lib_tests.py
+```
