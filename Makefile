@@ -16,14 +16,6 @@ all: clean install test check_code
 install: clean wheel
 	@pip3 install -U dist/*.whl
 
-prod_install: wheel
-	@ansible-playbook -i ansible/all.serverlist \
-	                                        --extra-vars "venv=venv" \
-	                                        --extra-vars "user=fox" \
-	                                        ansible/playbook_deploy.yml
-	@echo Package installed on host remote host.
-
-
 install_requirements:
 	@pip3 install -r requirements.txt
 
